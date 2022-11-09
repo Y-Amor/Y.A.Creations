@@ -1,0 +1,75 @@
+import time
+questionNumber = 0
+right = 0
+wrong = 0
+name = str(input("Please Enter your name"))
+print()
+def questions():
+    def questionOne():
+        global right, wrong, questionNumber
+        print("What is the population of New Zealand?")
+        print("Is it A:6.7m B:3.2m C:5.1m or D:4.5m")
+        ans = str(input())
+        if ans == "D" or ans == "d" or ans == '4.5' or ans == '4':
+            print("You got it right!")
+            right = right + 1
+        else:
+            print("You got it wrong!")
+            wrong = wrong+1
+        questionNumber = questionNumber + 1
+    questionOne()
+    time.sleep(2)
+    print()
+    print("So far",name,"You have got",right,"Answers right,",wrong,"Answers wrong and you have completed",questionNumber,"Questions")
+    print()
+    time.sleep(4)
+    def questionTwo():
+        global right, wrong, questionNumber
+        print("What year did the first european set foot on New Zealand (Abel Tasman)")
+        print("Is it A:1830 B:1543 C:1642 or D:1765")
+        ans = str(input())
+        if ans == "C" or ans == "c" or ans == '1642'or ans == '3':
+            print("You got it right!")
+            right = right + 1
+        else:
+            print("You got it wrong!")
+            wrong = wrong+1
+        questionNumber = questionNumber + 1   
+    questionTwo()
+    time.sleep(2)
+    print()
+    print("So far ",name,"You have got",right,"Answers right,",wrong,"Answers wrong and you have completed",questionNumber,"Questions")
+    print()
+    time.sleep(4)
+    def questionThree():
+        global right, wrong, questionNumber
+        print("How many Kiwi are there left in New Zealand (Approx)")
+        print("Is it A:2000 B:600 C:70,000 or D:100000")
+        ans = str(input())
+        if ans == "D" or ans == "d" or ans == '100000'or ans == '4':
+            print("You got it right!")
+            right = right + 1
+        else:
+            print("You got it wrong!")
+            wrong = wrong+1
+        questionNumber = questionNumber + 1   
+    questionThree()
+    time.sleep(2)
+    print()
+    print("So far ",name,"You have got",right,"Answers right,",wrong,"Answers wrong and you have completed",questionNumber,"Questions")
+    print()
+    time.sleep(4)
+    def questionFour():
+        global right, wrong, questionNumber
+        print("How many new babys where born in New Zealand in 2015")
+        print("Is it A:61,000 B:208,000 C:98,000 or D:18,000")
+        ans = str(input())
+        if ans == "D" or ans == "d" or ans == '100000'or ans == '4':S
+            print("You got it right!")
+            right = right + 1
+        else:
+            print("You got it wrong!")
+            wrong = wrong+1
+        questionNumber = questionNumber + 1   
+    questionFour()
+questions()
