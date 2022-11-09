@@ -7,10 +7,10 @@ print()
 def questions():
     def questionOne():
         global right, wrong, questionNumber
-        print("What is the population of New Zealand?")
-        print("Is it A:6.7m B:3.2m C:5.1m or D:4.5m")
+        print("Who has won the most NBA Championships?")
+        print("Is it A:BillRussel B:LebronJames C:MichaelJordan or D:AlexCaruso")
         ans = str(input())
-        if ans == "D" or ans == "d" or ans == '4.5' or ans == '4':
+        if ans == "A" or ans == "a" or ans == 'BillRussel' or ans == 'Bill Russel':
             print("You got it right!")
             right = right + 1
         else:
@@ -25,10 +25,10 @@ def questions():
     time.sleep(4)
     def questionTwo():
         global right, wrong, questionNumber
-        print("What year did the first european set foot on New Zealand (Abel Tasman)")
-        print("Is it A:1830 B:1543 C:1642 or D:1765")
+        print("What year was Lebron James Drafted?")
+        print("Is it A:2002 B:2004 C:1999 or D:2003")
         ans = str(input())
-        if ans == "C" or ans == "c" or ans == '1642'or ans == '3':
+        if ans == "D" or ans == "d" or ans == '2003'or ans == '03':
             print("You got it right!")
             right = right + 1
         else:
@@ -43,10 +43,10 @@ def questions():
     time.sleep(4)
     def questionThree():
         global right, wrong, questionNumber
-        print("How many Kiwi are there left in New Zealand (Approx)")
-        print("Is it A:2000 B:600 C:70,000 or D:100000")
+        print("Who was the head coach of the Golden State Warriors before Steve Kerr?")
+        print("Is it A:KeithSmart B:DonNelson C:Joe Thsai or D:MarkJackson")
         ans = str(input())
-        if ans == "D" or ans == "d" or ans == '100000'or ans == '4':
+        if ans == "D" or ans == "d" or ans == 'MarkJackson'or ans == 'Mark Jackson':
             print("You got it right!")
             right = right + 1
         else:
@@ -61,10 +61,10 @@ def questions():
     time.sleep(4)
     def questionFour():
         global right, wrong, questionNumber
-        print("How many new babys where born in New Zealand in 2015")
-        print("Is it A:61,000 B:208,000 C:98,000 or D:18,000")
+        print("What team drafted Kobe Bryant?")
+        print("Is it A:Charlotte Hornets  B:Charlotte Bobcats C:Los-Angles Lakers or D: Clevland Cavaliers")
         ans = str(input())
-        if ans == "D" or ans == "d" or ans == '100000'or ans == '4':S
+        if ans == "A" or ans == "a" or ans == 'Charlotte Hornets'or ans == 'CharlotteHornets':S
             print("You got it right!")
             right = right + 1
         else:
