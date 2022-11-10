@@ -22,7 +22,7 @@ def questions():
     print()
     print("So far",name,"You have got",right,"Answers right,",wrong,"Answers wrong and you have completed",questionNumber,"Questions")
     print()
-    time.sleep(4)
+    time.sleep(2)
     def questionTwo():
         global right, wrong, questionNumber
         print("What year was Lebron James Drafted?")
@@ -58,13 +58,13 @@ def questions():
     print()
     print("So far ",name,"You have got",right,"Answers right,",wrong,"Answers wrong and you have completed",questionNumber,"Questions")
     print()
-    time.sleep(4)
+    time.sleep(2)
     def questionFour():
         global right, wrong, questionNumber
         print("What team drafted Kobe Bryant?")
         print("Is it A:Charlotte Hornets  B:Charlotte Bobcats C:Los-Angles Lakers or D: Clevland Cavaliers")
         ans = str(input())
-        if ans == "A" or ans == "a" or ans == 'Charlotte Hornets'or ans == 'CharlotteHornets':S
+        if ans == "A" or ans == "a" or ans == 'Charlotte Hornets'or ans == 'CharlotteHornets':
             print("You got it right!")
             right = right + 1
         else:
@@ -72,4 +72,62 @@ def questions():
             wrong = wrong+1
         questionNumber = questionNumber + 1   
     questionFour()
+    
+    def questionFive():
+        global right, wrong, questionNumber
+        print("Which team has won the most regular season games in a single season?")
+        print("Is it A:Chicago Bulls  B:Los Angles Lakers  C:Golden State Warriors or D:New York Knicks")
+        ans = str(input())
+        if ans == "C" or ans == "c" or ans == 'Golden State Warriors' or ans == 'GoldenStateWarriors':
+            print("You got it right!")
+            right = right + 1
+        else:
+            print("You got it wrong!")
+            wrong = wrong+1
+        questionNumber = questionNumber + 1
+    questionFive()
+    time.sleep(2)
+    print()
+    print("So far",name,"You have got",right,"Answers right,",wrong,"Answers wrong and you have completed",questionNumber,"Questions")
+    print()
+    time.sleep(2)
+    
+    def questionSix():
+        global right, wrong, questionNumber
+        print("Who is the tallest player to ever play in the NBA")
+        print("Is it A:Sun Mingming  B:Yao Ming  C:Shaq or D:=Tacko Fall")
+        ans = str(input())
+        if ans == "A" or ans == "a" or ans == 'Sun Mingming' or ans == 'SunMingming':
+            print("You got it right!")
+            right = right + 1
+        else:
+            print("You got it wrong!")
+            wrong = wrong+1
+        questionNumber = questionNumber + 1
+    questionSix()
+    time.sleep(2)
+    print()
+    print("So far",name,"You have got",right,"Answers right,",wrong,"Answers wrong and you have completed",questionNumber,"Questions")
+    print()
+    time.sleep(2)
+    
+    def questionSeven():
+        global right, wrong, questionNumber
+        print("Who has the most individual points scored in the NBA?")
+        print("Is it A:Sun Mingming  B:Yao Ming  C:Shaq or D:=Tacko Fall")
+        ans = str(input())
+        if ans == "A" or ans == "a" or ans == 'Sun Mingming' or ans == 'SunMingming':
+            print("You got it right!")
+            right = right + 1
+        else:
+            print("You got it wrong!")
+            wrong = wrong+1
+        questionNumber = questionNumber + 1
+    questionSeven()
+    time.sleep(2)
+    print()
+    print("So far",name,"You have got",right,"Answers right,",wrong,"Answers wrong and you have completed",questionNumber,"Questions")
+    print()
+    time.sleep(2)
+    
 questions()
