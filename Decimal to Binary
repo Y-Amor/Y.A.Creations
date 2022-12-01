@@ -2,3 +2,15 @@ DecimalToBinary(num):
         if num >= 1:
             DecimalToBinary(num // 2)
            print num % 2 
+           
+           
+           
+# Function Binary to Decimal number 
+def binaryToDecimal(val): 
+    return int(val, 2) 
+ 
+# Driver code 
+if __name__ == '__main__': 
+    print(binaryToDecimal('100')) 
+    print(binaryToDecimal('101'))
+    print(binaryToDecimal('1001'))
