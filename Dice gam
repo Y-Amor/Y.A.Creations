@@ -1,0 +1,43 @@
+import random
+repeat = True
+risk = 0
+
+balance = 100
+
+
+def dice_simulate(guess, risk):
+    diceNum = random.randint(1,6)
+    
+    print ("The number was " + " " + str(diceNum))
+    if (guess == diceNum):
+        if (risk > 0 and risk < 50):
+            newbalance = balance + (risk * 0.35)
+            print ("Congrats your new balance is " + " " + str(balance))
+            return newbalance
+            
+        elif (risk > 50 and risk < 75):
+            newbalance = balance + (risk * 0.75)
+            print ("Congrats your new balance is " + " " + str(newbalance))
+            return newbalance
+        elif (risk > 75 and risk <= 100):
+            newbalance = balance + (risk * 1.5)
+            print ("Congrats your new balance is " + " " + str(newbalance))
+            return newbalance
+        
+            
+    if (guess != diceNum):
+        newbalance = balance - risk
+        print ("Ouch your new balance is " + " " + str(newbalance))
+        return newbalance
+
+    
+
+print ("Welcome to the dice game how much money can you earn?")            
+while (balance != 0 ):
+    
+    risk1 = int(input("How much of your balance would you like to risk?" + " "))
+    guess1 = int(input("please enter your pick (A number between 1 and 6" + " "))
+    #dice_simulate(risk1 , guess1)
+    print ("Your current balance is" + " " + str(dice_simulate(risk1 , guess1)))
+    
+#playAgain()
